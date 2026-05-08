@@ -15,7 +15,6 @@ FROM tomcat:11.0-jdk17-temurin
 # Remove default Tomcat webapps
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-# Copy the WAR file from the build stage
 # Renaming to ROOT.war makes it available at http://localhost:8080/
 COPY --from=build /app/target/*.war /usr/local/tomcat/webapps/ROOT.war
 
