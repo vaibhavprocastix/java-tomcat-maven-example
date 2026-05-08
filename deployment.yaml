@@ -20,7 +20,7 @@ spec:
       containers:
       - name: javaapp
 
-        image: YOUR_DOCKER_USERNAME/javaapp:v1
+        image: vaibhavprocastix1/javaapp:v1
 
         ports:
         - containerPort: 8080
